@@ -12,9 +12,42 @@
     <p id="demo"></p>
 
     <script>
-        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        document.getElementById("demo").innerHTML = text.length;
+        let text1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML = text1.length;
         </script>
+
+</body>
+</html>        
+       
+       <!-- Extracting String Parts
+       There are 3 methods for extracting a part of a string:
+       
+       i. slice(start, end)
+       ii. substring(start, end)
+       iii. substr(start, length) -->
+
+       <!-- JavaScript String slice()
+        slice() extracts a part of a string and returns the extracted part in a new string.
+        The method takes 2 parameters: start position, and end position (end not included). -->
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JavaScript String Length</title>
+        </head>
+        <body>
+        <h1>JavaScript Strings</h1>
+        <h2>The slice() Method</h2>
+        <p>The sliced (extracted) part of the string is:</p>
+        <p id="demo"></p>
+
+        <script>
+            let text = "Apple, Banana, Kiwi";
+            let part = text.slice(7,13);
+            document.getElementById("demo").innerHTML = part;
+            </script>
 
 </body>
 </html>
